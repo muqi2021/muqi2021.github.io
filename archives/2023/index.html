@@ -1741,7 +1741,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1705821450455),
+    lastupdate: new Date(1706415908351),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -1761,7 +1761,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox: {"css":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.css","js":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.umd.js"},
       
       aplayer: {
-        id: 7971793033,
+        id: 8398287642,
         enable:true
       },
       
@@ -3354,7 +3354,7 @@ Input
       list-max-height='320px'
       server='netease'
       type='playlist'
-      id='7971793033'
+      id='8398287642'
       list-folded='true'>
     </meting-js>
   
@@ -3395,7 +3395,7 @@ Input
             
           
             
-              <a href="https://music.163.com/#/user/home?id=1759691133"
+              <a href="https://music.163.com/#/playlist?id=8398287642"
                 class="social fas fa-headphones-alt flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
@@ -3573,7 +3573,7 @@ Input
             Metings.forEach((item, index) => {
               const aplayerItem = item.aplayer; if(!aplayerItem) return;
               const rightAplayerCheck = 'true' === 'true'
-                && item.meta.id === '7971793033';
+                && item.meta.id === '8398287642';
               if(rightAplayerCheck && typeof RightMenuAplayer !="undefined") RightMenuAplayer.checkAPlayer();
               if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
                 aplayerItem.on('play', function messagePlay() {
@@ -3642,7 +3642,7 @@ Input
   function pjax_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"muqi2021/comments","repo-id":"R_kgDOLKj2RQ","category":"Announcements","category-id":"DIC_kwDOLKj2Rc4CcvmB","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{
